@@ -13,10 +13,13 @@ class COVIDDiagnoseVC: UIViewController {
     let covidDetector = COVIDDetector()
 
     @IBOutlet weak var imageData: UIImageView!
+    @IBOutlet weak var addImageLbl: UILabel!
+    
+    @IBOutlet weak var diagnoseButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        diagnoseButton.layer.cornerRadius = 10
     }
     
     @IBAction func closeBtn(_ sender: Any) {
@@ -58,8 +61,8 @@ extension COVIDDiagnoseVC{
                     self.performSegue(withIdentifier: "negative", sender: nil)
                 }
                 else{
-//                    imagelabel.isHidden = false
-//                    imagelabel.text = "Wrong image"
+                    addImageLbl.isHidden = false
+                    addImageLbl.text = "Wrong image"
                 }
             }
             
@@ -95,7 +98,7 @@ extension COVIDDiagnoseVC:  UIImagePickerControllerDelegate, UINavigationControl
         picker.dismiss(animated: true, completion: nil)
         let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
         self.imageData.image = image
-       //self.imagelabel.isHidden = true
+       self.addImageLbl.isHidden = true
     }
     
     func setupImageSelection(action: UIAlertAction){

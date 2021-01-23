@@ -8,10 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		5522F4A525BCB85700CE7BA4 /* DiagnoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5522F4A425BCB85700CE7BA4 /* DiagnoseViewController.swift */; };
-		5593396825BCAC1600443F6A /* skin disease 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5593396425BCAC1600443F6A /* skin disease 1.mlmodel */; };
+		5522F4A825BCBB8900CE7BA4 /* COVIDDetector.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5522F4A725BCBB8900CE7BA4 /* COVIDDetector.mlmodel */; };
+		5593396825BCAC1600443F6A /* skindisease.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5593396425BCAC1600443F6A /* skindisease.mlmodel */; };
 		5593396925BCAC1600443F6A /* Teath Disease 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5593396525BCAC1600443F6A /* Teath Disease 1.mlmodel */; };
-		5593396A25BCAC1600443F6A /* Nail Disease.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5593396625BCAC1600443F6A /* Nail Disease.mlmodel */; };
+		5593396A25BCAC1600443F6A /* NailDisease.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5593396625BCAC1600443F6A /* NailDisease.mlmodel */; };
 		5593396B25BCAC1600443F6A /* skinCancer.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5593396725BCAC1600443F6A /* skinCancer.mlmodel */; };
+		559A5F6A25BCC08D004A3CD0 /* COVIDDiagnoseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A5F6925BCC08D004A3CD0 /* COVIDDiagnoseVC.swift */; };
+		559A5F6D25BCC0B0004A3CD0 /* NailDiagnoseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A5F6C25BCC0B0004A3CD0 /* NailDiagnoseVC.swift */; };
+		559A5F7025BCC36F004A3CD0 /* SkinCancerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559A5F6F25BCC36F004A3CD0 /* SkinCancerVC.swift */; };
 		55CC05EF25BC9EB200B66E0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CC05EE25BC9EB200B66E0F /* AppDelegate.swift */; };
 		55CC05F125BC9EB200B66E0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CC05F025BC9EB200B66E0F /* SceneDelegate.swift */; };
 		55CC05F325BC9EB200B66E0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CC05F225BC9EB200B66E0F /* ViewController.swift */; };
@@ -22,10 +26,14 @@
 
 /* Begin PBXFileReference section */
 		5522F4A425BCB85700CE7BA4 /* DiagnoseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DiagnoseViewController.swift; path = "Doctor Bot/View/DiagnoseViewController.swift"; sourceTree = SOURCE_ROOT; };
-		5593396425BCAC1600443F6A /* skin disease 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "skin disease 1.mlmodel"; sourceTree = "<group>"; };
+		5522F4A725BCBB8900CE7BA4 /* COVIDDetector.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = COVIDDetector.mlmodel; sourceTree = "<group>"; };
+		5593396425BCAC1600443F6A /* skindisease.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = skindisease.mlmodel; sourceTree = "<group>"; };
 		5593396525BCAC1600443F6A /* Teath Disease 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "Teath Disease 1.mlmodel"; sourceTree = "<group>"; };
-		5593396625BCAC1600443F6A /* Nail Disease.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "Nail Disease.mlmodel"; sourceTree = "<group>"; };
+		5593396625BCAC1600443F6A /* NailDisease.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = NailDisease.mlmodel; sourceTree = "<group>"; };
 		5593396725BCAC1600443F6A /* skinCancer.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = skinCancer.mlmodel; sourceTree = "<group>"; };
+		559A5F6925BCC08D004A3CD0 /* COVIDDiagnoseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = COVIDDiagnoseVC.swift; path = "Doctor Bot/View/COVIDDiagnoseVC.swift"; sourceTree = SOURCE_ROOT; };
+		559A5F6C25BCC0B0004A3CD0 /* NailDiagnoseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NailDiagnoseVC.swift; path = "Doctor Bot/View/NailDiagnoseVC.swift"; sourceTree = SOURCE_ROOT; };
+		559A5F6F25BCC36F004A3CD0 /* SkinCancerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SkinCancerVC.swift; path = "Doctor Bot/View/SkinCancerVC.swift"; sourceTree = SOURCE_ROOT; };
 		55CC05EB25BC9EB200B66E0F /* Doctor Bot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Doctor Bot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55CC05EE25BC9EB200B66E0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55CC05F025BC9EB200B66E0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,8 +58,9 @@
 		5593396D25BCAC1B00443F6A /* ML Model */ = {
 			isa = PBXGroup;
 			children = (
-				5593396625BCAC1600443F6A /* Nail Disease.mlmodel */,
-				5593396425BCAC1600443F6A /* skin disease 1.mlmodel */,
+				5522F4A725BCBB8900CE7BA4 /* COVIDDetector.mlmodel */,
+				5593396625BCAC1600443F6A /* NailDisease.mlmodel */,
+				5593396425BCAC1600443F6A /* skindisease.mlmodel */,
 				5593396725BCAC1600443F6A /* skinCancer.mlmodel */,
 				5593396525BCAC1600443F6A /* Teath Disease 1.mlmodel */,
 			);
@@ -78,6 +87,9 @@
 		5593397225BCAC4600443F6A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				559A5F6F25BCC36F004A3CD0 /* SkinCancerVC.swift */,
+				559A5F6C25BCC0B0004A3CD0 /* NailDiagnoseVC.swift */,
+				559A5F6925BCC08D004A3CD0 /* COVIDDiagnoseVC.swift */,
 				5522F4A425BCB85700CE7BA4 /* DiagnoseViewController.swift */,
 				55CC05F225BC9EB200B66E0F /* ViewController.swift */,
 			);
@@ -186,12 +198,16 @@
 			files = (
 				5522F4A525BCB85700CE7BA4 /* DiagnoseViewController.swift in Sources */,
 				55CC05F325BC9EB200B66E0F /* ViewController.swift in Sources */,
-				5593396A25BCAC1600443F6A /* Nail Disease.mlmodel in Sources */,
+				559A5F6D25BCC0B0004A3CD0 /* NailDiagnoseVC.swift in Sources */,
+				5593396A25BCAC1600443F6A /* NailDisease.mlmodel in Sources */,
 				55CC05EF25BC9EB200B66E0F /* AppDelegate.swift in Sources */,
 				5593396B25BCAC1600443F6A /* skinCancer.mlmodel in Sources */,
 				55CC05F125BC9EB200B66E0F /* SceneDelegate.swift in Sources */,
 				5593396925BCAC1600443F6A /* Teath Disease 1.mlmodel in Sources */,
-				5593396825BCAC1600443F6A /* skin disease 1.mlmodel in Sources */,
+				5593396825BCAC1600443F6A /* skindisease.mlmodel in Sources */,
+				559A5F6A25BCC08D004A3CD0 /* COVIDDiagnoseVC.swift in Sources */,
+				5522F4A825BCBB8900CE7BA4 /* COVIDDetector.mlmodel in Sources */,
+				559A5F7025BCC36F004A3CD0 /* SkinCancerVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

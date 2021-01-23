@@ -105,41 +105,526 @@
                     <view key="view" contentMode="scaleToFill" id="0I8-3I-Wsk">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8e-7p-X3o">
+                                <rect key="frame" x="20" y="44" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="chevron.down" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="38" weight="regular"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeBtn:" destination="0f2-gv-YT3" eventType="touchUpInside" id="qPe-Nt-ggE"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3rv-oO-V2e">
+                                <rect key="frame" x="0.0" y="263" width="428" height="663"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKY-ha-utN">
+                                        <rect key="frame" x="24" y="46" width="382" height="76"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="lungs" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="53" weight="regular"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="covid:" destination="0f2-gv-YT3" eventType="touchUpInside" id="ice-Eg-ljC"/>
+                                            <action selector="diagnoseButton:" destination="88E-xC-N2B" eventType="touchUpInside" id="wtD-Ls-vvf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pEl-Nf-e0V">
+                                        <rect key="frame" x="24" y="165" width="85" height="76"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="skin">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="54" weight="regular"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="diagnoseButton:" destination="88E-xC-N2B" eventType="touchUpInside" id="aV7-9h-aaz"/>
+                                            <action selector="skind:" destination="0f2-gv-YT3" eventType="touchUpInside" id="Znj-r3-JLc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ha7-o7-IK5">
+                                        <rect key="frame" x="24" y="288" width="85" height="76"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="teeth">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="54" weight="regular"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="diagnoseButton:" destination="88E-xC-N2B" eventType="touchUpInside" id="jbH-aI-4Tr"/>
+                                            <action selector="teeth:" destination="0f2-gv-YT3" eventType="touchUpInside" id="HDc-0y-GtZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQk-uq-NiV">
+                                        <rect key="frame" x="24" y="410" width="85" height="76"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="nail">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="54" weight="regular"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="diagnoseButton:" destination="88E-xC-N2B" eventType="touchUpInside" id="7Be-ba-aiN"/>
+                                            <action selector="nail:" destination="0f2-gv-YT3" eventType="touchUpInside" id="0e6-4a-Y4A"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5CY-PD-wHH">
+                                        <rect key="frame" x="24" y="518" width="382" height="76"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="ladybug" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="51" weight="regular"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="diagnoseButton:" destination="88E-xC-N2B" eventType="touchUpInside" id="uC6-Jw-0Ju"/>
+                                            <action selector="skinc:" destination="0f2-gv-YT3" eventType="touchUpInside" id="NLV-U2-P7I"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="COVID 19" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQ9-uu-N0o">
+                                        <rect key="frame" x="139" y="65" width="239" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Skin Rashes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mO-ee-Ong">
+                                        <rect key="frame" x="139" y="184" width="239" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
+                                        <color key="textColor" systemColor="systemGreenColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tooth Decay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eV1-ic-hN7">
+                                        <rect key="frame" x="139" y="307" width="239" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
+                                        <color key="textColor" systemColor="systemGrayColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nail Disease" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLs-gk-ZEz">
+                                        <rect key="frame" x="139" y="429" width="239" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
+                                        <color key="textColor" systemColor="systemOrangeColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Skin Cancer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xU-c0-nPo">
+                                        <rect key="frame" x="139" y="537" width="239" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
+                                        <color key="textColor" systemColor="systemPurpleColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="All diagnosing are done on high level made ML model with an accuracy of 85%* ." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G52-J9-BYr">
+                                <rect key="frame" x="20" y="203" width="388" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DIAGNOSING UNIT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFt-CI-w7X">
+                                <rect key="frame" x="101" y="93" width="227" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="29"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="C2n-7s-ATW"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="VD9-YO-6es"/>
+                    <connections>
+                        <outlet property="view1" destination="3rv-oO-V2e" id="lAG-hR-mbl"/>
+                        <segue destination="Ft5-Jf-KSr" kind="show" identifier="covid" id="GLg-AX-EbK"/>
+                        <segue destination="PAU-ci-maF" kind="show" identifier="skind" id="9kP-hT-kov"/>
+                        <segue destination="Iiq-hr-vbC" kind="show" identifier="teeth" id="b5q-en-H1u"/>
+                        <segue destination="5O4-7m-cEz" kind="show" identifier="nail" id="dca-t1-Byk"/>
+                        <segue destination="zW9-2F-Bs0" kind="show" identifier="skinc" id="pjP-xQ-boV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EPu-mw-K6d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-364" y="873"/>
+            <point key="canvasLocation" x="-364.48598130841117" y="872.7861771058316"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="zfT-0w-bKz">
             <objects>
-                <viewController id="PAU-ci-maF" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="PAU-ci-maF" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jR3-JB-0Kl">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o7t-Bz-cig">
+                                <rect key="frame" x="166" y="180" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="chevron.down" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="38" weight="regular"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeBtn:" destination="0f2-gv-YT3" eventType="touchUpInside" id="hfb-MH-sqo"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="1gM-Wc-YB8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="VpU-Gt-Vff"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n6c-xf-cqr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="364" y="873"/>
+            <point key="canvasLocation" x="-1033" y="1573"/>
+        </scene>
+        <!--DiagnoseVC-->
+        <scene sceneID="GE9-pL-xzN">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Ft5-Jf-KSr" customClass="COVIDDiagnoseVC" customModule="Doctor_Bot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CXe-mn-ACb">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dj6-9v-cYt">
+                                <rect key="frame" x="49" y="80" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="chevron.down" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="38" weight="regular"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeBtn:" destination="0f2-gv-YT3" eventType="touchUpInside" id="Jek-dQ-xP0"/>
+                                    <action selector="closeBtn:" destination="Ft5-Jf-KSr" eventType="touchUpInside" id="a4K-GW-HJ9"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="K8g-bp-ckS">
+                                <rect key="frame" x="50" y="247" width="329" height="306"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ZRx-zm-muA" appends="YES" id="rtp-sR-Nez"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hR-3d-N9E">
+                                <rect key="frame" x="182" y="695" width="65" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Diagnose"/>
+                                <connections>
+                                    <action selector="diagnoseBtn:" destination="Ft5-Jf-KSr" eventType="touchUpInside" id="ArU-Pg-HMC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mUr-b0-aPt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ecg-mq-o3k"/>
+                    <connections>
+                        <outlet property="imageData" destination="K8g-bp-ckS" id="PeN-mj-erj"/>
+                        <segue destination="D0Y-ti-wU2" kind="show" identifier="positive" id="NOL-Gb-Q3x"/>
+                        <segue destination="bJO-By-TYA" kind="show" identifier="negative" id="9LN-ZC-x9V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xhF-fg-sDE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ZRx-zm-muA">
+                    <connections>
+                        <action selector="addImageBtn:" destination="Ft5-Jf-KSr" id="PDo-Hw-fs9"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-1692.0560747663551" y="1572.5701943844495"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9Om-0L-eWq">
+            <objects>
+                <viewController id="D0Y-ti-wU2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IQU-IK-nFX">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Positive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BkY-eI-Vh1">
+                                <rect key="frame" x="159" y="214" width="60" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LRr-9z-4mz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CT0-Gl-J36"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q3H-TG-ofc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2172" y="2280"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mhe-pa-Wsq">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Iiq-hr-vbC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bqr-S2-ii8">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6D-hZ-VjT">
+                                <rect key="frame" x="145" y="127" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="chevron.down" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="38" weight="regular"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeBtn:" destination="0f2-gv-YT3" eventType="touchUpInside" id="sna-1P-AhA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9YK-e4-HPf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="y3v-uF-PoZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u9e-7u-iUb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-381" y="1573"/>
+        </scene>
+        <!--Nail DiagnoseVC-->
+        <scene sceneID="DJq-cF-1tv">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="5O4-7m-cEz" customClass="NailDiagnoseVC" customModule="Doctor_Bot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TLU-f2-bfb">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EdN-jz-wxd">
+                                <rect key="frame" x="32" y="82" width="364" height="810"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="p30-Be-PwM">
+                                        <rect key="frame" x="25" y="100" width="313" height="362"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="rNL-U3-fMS" appends="YES" id="A2j-Lz-PKF"/>
+                                        </connections>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dM7-lG-8kF">
+                                        <rect key="frame" x="62" y="491" width="239" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.91921168565750122" green="0.43345590730417854" blue="0.32022374884777011" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="21"/>
+                                        <state key="normal" title="Diagnose">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="diagnoseBtn:" destination="zW9-2F-Bs0" eventType="touchUpInside" id="AFd-Y2-Ds4"/>
+                                            <action selector="diagnoseBtn:" destination="Ft5-Jf-KSr" eventType="touchUpInside" id="Lvo-p5-otP"/>
+                                            <action selector="diagnoseBtn:" destination="5O4-7m-cEz" eventType="touchUpInside" id="YUK-PV-RwF"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Image +" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Odo-H1-VmZ">
+                                        <rect key="frame" x="126" y="384" width="111" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Result" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNl-09-Agc">
+                                        <rect key="frame" x="8" y="578" width="348" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="16" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKQ-uK-rLa">
+                                        <rect key="frame" x="16" y="629" width="330" height="164"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemGrayColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NAIL DIAGNOSING" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAX-7W-lZp">
+                                <rect key="frame" x="100" y="112" width="227" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="29"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ob8-4b-Qfo">
+                                <rect key="frame" x="20" y="44" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="chevron.down" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="38" weight="regular"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeBtn:" destination="5O4-7m-cEz" eventType="touchUpInside" id="QM7-4b-wOS"/>
+                                    <action selector="closeBtn:" destination="0f2-gv-YT3" eventType="touchUpInside" id="QsO-55-70a"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NDT-fA-bFS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="e4H-3e-Zs1"/>
+                    <connections>
+                        <outlet property="addImgLabel" destination="Odo-H1-VmZ" id="BvW-vf-NNT"/>
+                        <outlet property="diagnose" destination="dM7-lG-8kF" id="1s0-LZ-l6T"/>
+                        <outlet property="diseaseDescription" destination="pKQ-uK-rLa" id="ljh-LZ-BSn"/>
+                        <outlet property="diseaseName" destination="oNl-09-Agc" id="hzp-Tx-YuN"/>
+                        <outlet property="nailImageData" destination="p30-Be-PwM" id="5Hj-VX-Fdp"/>
+                        <outlet property="view1" destination="EdN-jz-wxd" id="1nE-sA-MQH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fQi-oe-qCq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="rNL-U3-fMS">
+                    <connections>
+                        <action selector="addImage:" destination="5O4-7m-cEz" id="X9a-Np-5iE"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="305.60747663551399" y="1572.5701943844495"/>
+        </scene>
+        <!--Skin CancerVC-->
+        <scene sceneID="gSR-KK-Ede">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="zW9-2F-Bs0" customClass="SkinCancerVC" customModule="Doctor_Bot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5hp-Z5-K70">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mul-rT-mxT">
+                                <rect key="frame" x="20" y="44" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="chevron.down" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="38" weight="regular"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeBtn:" destination="zW9-2F-Bs0" eventType="touchUpInside" id="ecv-mW-lii"/>
+                                    <action selector="closeBtn:" destination="0f2-gv-YT3" eventType="touchUpInside" id="gAq-3G-Tx4"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="Hf8-cZ-Q5a">
+                                <rect key="frame" x="49" y="238" width="329" height="306"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Agp-1v-pbU" appends="YES" id="Yys-vb-vWJ"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IR7-lC-2l0">
+                                <rect key="frame" x="181" y="681" width="65" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Diagnose"/>
+                                <connections>
+                                    <action selector="diagnoseBtn:" destination="zW9-2F-Bs0" eventType="touchUpInside" id="MPn-qx-mbx"/>
+                                    <action selector="diagnoseBtn:" destination="Ft5-Jf-KSr" eventType="touchUpInside" id="ldg-Nw-ovc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cio-wg-iPh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TkL-a0-wFA"/>
+                    <connections>
+                        <outlet property="skinImage" destination="Hf8-cZ-Q5a" id="JbR-vP-UBM"/>
+                        <segue destination="Voy-Aq-hbE" kind="show" id="xqC-pP-sE5"/>
+                        <segue destination="cSE-eO-Hf4" kind="show" id="gkZ-RR-6O3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ZS-A5-Vce" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Agp-1v-pbU">
+                    <connections>
+                        <action selector="addImageBtn:" destination="zW9-2F-Bs0" id="hSP-PY-Xqx"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="961.68224299065412" y="1572.5701943844495"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uep-jc-rq1">
+            <objects>
+                <viewController id="bJO-By-TYA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xxf-yw-Eif">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="5kz-mo-2Cp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Jow-MS-TuK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="98h-Lh-nqq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1459" y="2279"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XRl-DD-xck">
+            <objects>
+                <viewController id="Voy-Aq-hbE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8YA-b3-LEc">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Positive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAJ-Am-RL0">
+                                <rect key="frame" x="159" y="214" width="60" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6bv-rn-Eo5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2Dx-jd-qMK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CSb-2R-Fdg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2014" y="1332"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kKJ-xw-g42">
+            <objects>
+                <viewController id="cSE-eO-Hf4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uul-n2-BK9">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="JJq-FY-7Lt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="1JK-GM-N4W"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e6m-Yn-Gk0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2038" y="2015"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Image" width="1256" height="1104"/>
+        <image name="chevron.down" catalog="system" width="128" height="72"/>
         <image name="cross" catalog="system" width="128" height="116"/>
         <image name="heart.text.square" catalog="system" width="128" height="114"/>
+        <image name="ladybug" catalog="system" width="128" height="128"/>
+        <image name="lungs" catalog="system" width="128" height="91"/>
+        <image name="nail" width="128" height="128"/>
         <image name="person.crop.circle.badge.exclamationmark" catalog="system" width="128" height="113"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="pills" catalog="system" width="128" height="104"/>
+        <image name="skin" width="258" height="264"/>
         <image name="staroflife" catalog="system" width="124" height="128"/>
+        <image name="teeth" width="640" height="640"/>
         <image name="waveform.path.ecg" catalog="system" width="128" height="124"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -16,33 +16,36 @@ class ViewController: UIViewController {
     @IBOutlet weak var hospitalizeBtn: UIButton!
     @IBOutlet weak var reportBtn: UIButton!
     @IBOutlet weak var emergencyBtn: UIButton!
+    @IBOutlet weak var profileImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         view1.layer.cornerRadius = 60
         
         diagnoseBtton.layer.cornerRadius = 10
-        diagnoseBtton.layer.borderWidth = 1
+        diagnoseBtton.layer.borderWidth = 0
         diagnoseBtton.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         
         pillBtn.layer.cornerRadius = 10
-        pillBtn.layer.borderWidth = 1
+        pillBtn.layer.borderWidth = 0
         pillBtn.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         
         doctorBtn.layer.cornerRadius = 10
-        doctorBtn.layer.borderWidth = 1
+        doctorBtn.layer.borderWidth = 0
         doctorBtn.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         
         hospitalizeBtn.layer.cornerRadius = 10
-        hospitalizeBtn.layer.borderWidth = 1
+        hospitalizeBtn.layer.borderWidth = 0
         hospitalizeBtn.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         
         reportBtn.layer.cornerRadius = 10
-        reportBtn.layer.borderWidth = 1
+        reportBtn.layer.borderWidth = 0
         reportBtn.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         
         emergencyBtn.layer.cornerRadius = 10
-        emergencyBtn.layer.borderWidth = 1
+        emergencyBtn.layer.borderWidth = 0
         emergencyBtn.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        
+        profileImage.layer.cornerRadius = 5
     }
 
     @IBAction func diagnoseButton(_ sender: Any) {

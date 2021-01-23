@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5522F4A525BCB85700CE7BA4 /* DiagnoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5522F4A425BCB85700CE7BA4 /* DiagnoseViewController.swift */; };
 		5593396825BCAC1600443F6A /* skin disease 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5593396425BCAC1600443F6A /* skin disease 1.mlmodel */; };
 		5593396925BCAC1600443F6A /* Teath Disease 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5593396525BCAC1600443F6A /* Teath Disease 1.mlmodel */; };
 		5593396A25BCAC1600443F6A /* Nail Disease.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5593396625BCAC1600443F6A /* Nail Disease.mlmodel */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5522F4A425BCB85700CE7BA4 /* DiagnoseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DiagnoseViewController.swift; path = "Doctor Bot/View/DiagnoseViewController.swift"; sourceTree = SOURCE_ROOT; };
 		5593396425BCAC1600443F6A /* skin disease 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "skin disease 1.mlmodel"; sourceTree = "<group>"; };
 		5593396525BCAC1600443F6A /* Teath Disease 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "Teath Disease 1.mlmodel"; sourceTree = "<group>"; };
 		5593396625BCAC1600443F6A /* Nail Disease.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "Nail Disease.mlmodel"; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		5593397225BCAC4600443F6A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5522F4A425BCB85700CE7BA4 /* DiagnoseViewController.swift */,
 				55CC05F225BC9EB200B66E0F /* ViewController.swift */,
 			);
 			path = Controllers;
@@ -181,6 +184,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5522F4A525BCB85700CE7BA4 /* DiagnoseViewController.swift in Sources */,
 				55CC05F325BC9EB200B66E0F /* ViewController.swift in Sources */,
 				5593396A25BCAC1600443F6A /* Nail Disease.mlmodel in Sources */,
 				55CC05EF25BC9EB200B66E0F /* AppDelegate.swift in Sources */,

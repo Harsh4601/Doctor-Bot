@@ -11,11 +11,16 @@ class SkinCancerVC: UIViewController {
     
     let cancerDetector = skinCancer()
 
+    @IBOutlet weak var view1: UIView!
     @IBOutlet weak var skinImage: UIImageView!
+    @IBOutlet weak var diagnose: UIButton!
+    @IBOutlet weak var addImageLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        view1.layer.cornerRadius = 20
+        diagnose.layer.cornerRadius = 10
+        skinImage.image = UIImage(named: "skindiag")
     }
     
     @IBAction func closeBtn(_ sender: Any) {
@@ -23,7 +28,12 @@ class SkinCancerVC: UIViewController {
     }
     
     @IBAction func diagnoseBtn(_ sender: Any) {
-        imageClassifier()
+        
+        if skinImage.image == UIImage(named: "skindiag"){
+            addImageLabel.textColor = UIColor.red
+        }else{
+            imageClassifier()
+        }
     }
     @IBAction func addImageBtn(_ sender: Any) {
         imageSelectionMode()

@@ -51,6 +51,9 @@ class ViewController: UIViewController {
     @IBAction func diagnoseButton(_ sender: Any) {
         self.performSegue(withIdentifier: "diagnose", sender: nil)
     }
+    @IBAction func medicineBtn(_ sender: Any) {
+        self.performSegue(withIdentifier: "report", sender: nil)
+    }
     
 }
 

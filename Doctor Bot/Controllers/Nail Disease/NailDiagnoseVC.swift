@@ -20,9 +20,10 @@ class NailDiagnoseVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view1.layer.cornerRadius = 30
+        view1.layer.cornerRadius = 20
         
         diagnose.layer.cornerRadius = 10
+        nailImageData.image = UIImage(named: "naildiag")
     }
     
     @IBAction func closeBtn(_ sender: Any) {
@@ -34,7 +35,12 @@ class NailDiagnoseVC: UIViewController {
         imageSelectionMode()
     }
     @IBAction func diagnoseBtn(_ sender: Any) {
-        imageClassifier()
+        
+        if nailImageData.image == UIImage(named: "naildiag"){
+            addImgLabel.textColor = UIColor.red
+        }else{
+            imageClassifier()
+        }
     }
     
 }

@@ -16,10 +16,13 @@ class COVIDDiagnoseVC: UIViewController {
     @IBOutlet weak var addImageLbl: UILabel!
     
     @IBOutlet weak var diagnoseButton: UIButton!
+    @IBOutlet weak var view1: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         diagnoseButton.layer.cornerRadius = 10
+        imageData.image = UIImage(named: "Image")
+        view1.layer.cornerRadius = 20
     }
     
     @IBAction func closeBtn(_ sender: Any) {
@@ -30,7 +33,12 @@ class COVIDDiagnoseVC: UIViewController {
         imageSelectionMode()
     }
     @IBAction func diagnoseBtn(_ sender: Any) {
-        imageClassifier()
+        
+        if imageData.image == UIImage(named: "Image"){
+            addImageLbl.textColor = UIColor.red
+        }else{
+            imageClassifier()
+        }
     }
     
 }

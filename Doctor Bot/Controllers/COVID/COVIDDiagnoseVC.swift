@@ -12,6 +12,7 @@ class COVIDDiagnoseVC: UIViewController {
     
     let covidDetector = COVIDDetector()
 
+    let main = ReportViewController()
     @IBOutlet weak var imageData: UIImageView!
     @IBOutlet weak var addImageLbl: UILabel!
     
@@ -64,9 +65,16 @@ extension COVIDDiagnoseVC{
                 
                 if res == "NORMAL"{
                     self.performSegue(withIdentifier: "positive", sender: nil)
+                    main.result.append("Positive")
+                    main.imgStatus.append("p")
+                    main.testDetail.append("COVID")
+                    print(main.testDetail)
                 }
                 else if res == "COVID"{
                     self.performSegue(withIdentifier: "negative", sender: nil)
+                    main.result.append("Negative")
+                    main.imgStatus.append("n")
+                    main.testDetail.append("COVID")
                 }
                 else{
                     addImageLbl.isHidden = false

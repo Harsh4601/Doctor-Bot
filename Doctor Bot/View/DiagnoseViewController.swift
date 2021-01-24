@@ -16,6 +16,8 @@ class DiagnoseViewController: UIViewController {
         view1.layer.cornerRadius = 20
     }
     
+   
+    
     @IBAction func closeBtn(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }

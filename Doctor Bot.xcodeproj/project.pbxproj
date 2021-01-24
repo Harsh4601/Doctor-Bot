@@ -14,6 +14,7 @@
 		55452E0525BD38B8006D04B6 /* benignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55452E0425BD38B8006D04B6 /* benignViewController.swift */; };
 		55452E0925BD38C2006D04B6 /* malignantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55452E0825BD38C2006D04B6 /* malignantViewController.swift */; };
 		55452E0C25BD4171006D04B6 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55452E0B25BD4171006D04B6 /* ReportViewController.swift */; };
+		55452E1125BD43B5006D04B6 /* ReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55452E1025BD43B5006D04B6 /* ReportTableViewCell.swift */; };
 		5593396825BCAC1600443F6A /* skindisease.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5593396425BCAC1600443F6A /* skindisease.mlmodel */; };
 		5593396925BCAC1600443F6A /* Teath Disease 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5593396525BCAC1600443F6A /* Teath Disease 1.mlmodel */; };
 		5593396A25BCAC1600443F6A /* NailDisease.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5593396625BCAC1600443F6A /* NailDisease.mlmodel */; };
@@ -36,7 +37,8 @@
 		55452E0025BD3609006D04B6 /* NegativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegativeViewController.swift; sourceTree = SOURCE_ROOT; };
 		55452E0425BD38B8006D04B6 /* benignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = benignViewController.swift; sourceTree = "<group>"; };
 		55452E0825BD38C2006D04B6 /* malignantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = malignantViewController.swift; sourceTree = "<group>"; };
-		55452E0B25BD4171006D04B6 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReportViewController.swift; path = "Doctor Bot/View/ReportViewController.swift"; sourceTree = SOURCE_ROOT; };
+		55452E0B25BD4171006D04B6 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReportViewController.swift; path = "Doctor Bot/Controllers/Report/ReportViewController.swift"; sourceTree = SOURCE_ROOT; };
+		55452E1025BD43B5006D04B6 /* ReportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReportTableViewCell.swift; path = "Doctor Bot/Controllers/Report/ReportTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
 		5593396425BCAC1600443F6A /* skindisease.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = skindisease.mlmodel; sourceTree = "<group>"; };
 		5593396525BCAC1600443F6A /* Teath Disease 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "Teath Disease 1.mlmodel"; sourceTree = "<group>"; };
 		5593396625BCAC1600443F6A /* NailDisease.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = NailDisease.mlmodel; sourceTree = "<group>"; };
@@ -93,6 +95,15 @@
 			path = "Nail Disease";
 			sourceTree = "<group>";
 		};
+		55452E1325BD43BA006D04B6 /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				55452E1025BD43B5006D04B6 /* ReportTableViewCell.swift */,
+				55452E0B25BD4171006D04B6 /* ReportViewController.swift */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
 		5593396D25BCAC1B00443F6A /* ML Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,12 +136,12 @@
 		5593397225BCAC4600443F6A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				55452E1325BD43BA006D04B6 /* Report */,
 				55452E0E25BD4179006D04B6 /* Nail Disease */,
 				55452E0325BD3886006D04B6 /* Skin Cancer */,
 				55452DFF25BD35F1006D04B6 /* COVID */,
 				5522F4A425BCB85700CE7BA4 /* DiagnoseViewController.swift */,
 				55CC05F225BC9EB200B66E0F /* ViewController.swift */,
-				55452E0B25BD4171006D04B6 /* ReportViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -244,6 +255,7 @@
 				5593396A25BCAC1600443F6A /* NailDisease.mlmodel in Sources */,
 				55452E0C25BD4171006D04B6 /* ReportViewController.swift in Sources */,
 				55452E0525BD38B8006D04B6 /* benignViewController.swift in Sources */,
+				55452E1125BD43B5006D04B6 /* ReportTableViewCell.swift in Sources */,
 				55CC05EF25BC9EB200B66E0F /* AppDelegate.swift in Sources */,
 				5593396B25BCAC1600443F6A /* skinCancer.mlmodel in Sources */,
 				55CC05F125BC9EB200B66E0F /* SceneDelegate.swift in Sources */,

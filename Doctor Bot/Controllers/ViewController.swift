@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var pillBtn: UIButton!
     @IBOutlet weak var doctorBtn: UIButton!
     @IBOutlet weak var hospitalizeBtn: UIButton!
-    @IBOutlet weak var reportBtn: UIButton!
+    @IBOutlet weak var reportButton: UIButton!
     @IBOutlet weak var emergencyBtn: UIButton!
     @IBOutlet weak var profileImage: UIImageView!
     override func viewDidLoad() {
@@ -37,9 +37,9 @@ class ViewController: UIViewController {
         hospitalizeBtn.layer.borderWidth = 0
         hospitalizeBtn.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         
-        reportBtn.layer.cornerRadius = 10
-        reportBtn.layer.borderWidth = 0
-        reportBtn.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        reportButton.layer.cornerRadius = 10
+        reportButton.layer.borderWidth = 0
+        reportButton.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         
         emergencyBtn.layer.cornerRadius = 10
         emergencyBtn.layer.borderWidth = 0
@@ -52,8 +52,11 @@ class ViewController: UIViewController {
         self.performSegue(withIdentifier: "diagnose", sender: nil)
     }
     @IBAction func medicineBtn(_ sender: Any) {
-        self.performSegue(withIdentifier: "report", sender: nil)
+        
     }
     
+    @IBAction func reportBtn(_ sender: Any) {
+        self.performSegue(withIdentifier: "report", sender: nil)
+    }
 }
 

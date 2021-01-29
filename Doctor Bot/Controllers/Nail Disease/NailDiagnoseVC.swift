@@ -27,7 +27,7 @@ class NailDiagnoseVC: UIViewController {
     }
     
     @IBAction func closeBtn(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        self.navigationController?.popToRootViewController(animated: true)
     }
     @IBAction func addImage(_ sender: Any) {
         diseaseName.text = "Result"

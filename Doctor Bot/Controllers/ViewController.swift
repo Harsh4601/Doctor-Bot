@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         self.performSegue(withIdentifier: "diagnose", sender: nil)
     }
     @IBAction func medicineBtn(_ sender: Any) {
-        
+        self.performSegue(withIdentifier: "medicine", sender: nil)
     }
     
     @IBAction func reportBtn(_ sender: Any) {

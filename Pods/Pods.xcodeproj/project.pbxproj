@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24858B071748C30792F339FEEE8DB4DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		488D4BEE936F58AE1C7565444B3853C4 /* Loafjet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAA83DE50C8AA03D40B9CED5BAD97AE /* Loafjet-dummy.m */; };
+		9BF6E1E7651BAFD649AF8214F27EBA52 /* Pods-Doctor Bot-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E282A21E69B80C255353349F92FE643E /* Pods-Doctor Bot-dummy.m */; };
+		BD3296DA892B6B74EEB8435A060A0358 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		D406987715FFF0EBB952047ABFD4F4EC /* Pods-Doctor Bot-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E67539E0B8F1FED274B9FC16F85A2FB /* Pods-Doctor Bot-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E19F98E44A1A03BE2E15F1F96AC9A1E4 /* Loafjet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B2E3D4E6DB1FA46239CF9E6DF124E0A1 /* Loafjet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F25E76066BD9C3546BB0617FC6743DAC /* Loaf.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59FC1927FC7A090D477B01314361D03 /* Loaf.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08AEB6B9AA46EB9AB6BFD3E4D2A96EC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D43D5C44FD44A1FCCCEBF773613899F;
+			remoteInfo = Loafjet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F579A6F1EFFD2D322E4024B66E679BE /* Loafjet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Loafjet.debug.xcconfig; sourceTree = "<group>"; };
+		2FFF4E38493BB0DC1BEA351AA6F55682 /* Loafjet-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Loafjet-Info.plist"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		39464673730778875C69B4F24CFCD4FC /* Pods-Doctor Bot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Doctor Bot.release.xcconfig"; sourceTree = "<group>"; };
+		3993427FD5FDEC38AA249FAA4C8D39BF /* Loafjet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Loafjet.release.xcconfig; sourceTree = "<group>"; };
+		4664D2FAF14F8BCA3759C82AEFAD2023 /* Loafjet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Loafjet.framework; path = Loafjet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AAA83DE50C8AA03D40B9CED5BAD97AE /* Loafjet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Loafjet-dummy.m"; sourceTree = "<group>"; };
+		530DB56FF22D1CEA6F803C0D8984F4B7 /* Pods-Doctor Bot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Doctor Bot.debug.xcconfig"; sourceTree = "<group>"; };
+		7E0147F7E024B3FB5ABF5C695E45F2F1 /* Pods-Doctor Bot.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Doctor Bot.modulemap"; sourceTree = "<group>"; };
+		9A47CF0319FE9FA33D5C54168DEB6F39 /* Loafjet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Loafjet.modulemap; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E67539E0B8F1FED274B9FC16F85A2FB /* Pods-Doctor Bot-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Doctor Bot-umbrella.h"; sourceTree = "<group>"; };
+		9F2D3E076095FB8C452866AA1A413F63 /* Pods-Doctor Bot-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Doctor Bot-frameworks.sh"; sourceTree = "<group>"; };
+		B2E3D4E6DB1FA46239CF9E6DF124E0A1 /* Loafjet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Loafjet-umbrella.h"; sourceTree = "<group>"; };
+		C967705D6410C255D0EA72D78F3EF83F /* Loafjet-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Loafjet-prefix.pch"; sourceTree = "<group>"; };
+		D06A4D38684BE1B43726BE48038F92DE /* Pods-Doctor Bot-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Doctor Bot-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D9DFAB22A2F0748869D09D979C78C3E2 /* Pods-Doctor Bot-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Doctor Bot-acknowledgements.plist"; sourceTree = "<group>"; };
+		E282A21E69B80C255353349F92FE643E /* Pods-Doctor Bot-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Doctor Bot-dummy.m"; sourceTree = "<group>"; };
+		E59FC1927FC7A090D477B01314361D03 /* Loaf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Loaf.swift; path = Source/Loaf.swift; sourceTree = "<group>"; };
+		EB2BE7E0910FE696A2145E4EE88CA5D0 /* Pods-Doctor Bot-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Doctor Bot-Info.plist"; sourceTree = "<group>"; };
+		F16CCADC965B4EF9E3C2FD1744CFE3A6 /* Pods_Doctor_Bot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Doctor_Bot.framework; path = "Pods-Doctor Bot.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		926B7C5BAFA12E618EED6187B369C70B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24858B071748C30792F339FEEE8DB4DC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4C07F7227768AF6C1A202DD5332833C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD3296DA892B6B74EEB8435A060A0358 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7327BB0D8400BA5A2A476889DFCE7C10 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A47CF0319FE9FA33D5C54168DEB6F39 /* Loafjet.modulemap */,
+				4AAA83DE50C8AA03D40B9CED5BAD97AE /* Loafjet-dummy.m */,
+				2FFF4E38493BB0DC1BEA351AA6F55682 /* Loafjet-Info.plist */,
+				C967705D6410C255D0EA72D78F3EF83F /* Loafjet-prefix.pch */,
+				B2E3D4E6DB1FA46239CF9E6DF124E0A1 /* Loafjet-umbrella.h */,
+				0F579A6F1EFFD2D322E4024B66E679BE /* Loafjet.debug.xcconfig */,
+				3993427FD5FDEC38AA249FAA4C8D39BF /* Loafjet.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Loafjet";
+			sourceTree = "<group>";
+		};
+		9F4BAAD67E21DD2B7F444077589AF059 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2738BF400820D62FF6C4E57C87ED05C /* Loafjet */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BD2531D41CD4C1DF08221478BF977878 /* Pods-Doctor Bot */ = {
+			isa = PBXGroup;
+			children = (
+				7E0147F7E024B3FB5ABF5C695E45F2F1 /* Pods-Doctor Bot.modulemap */,
+				D06A4D38684BE1B43726BE48038F92DE /* Pods-Doctor Bot-acknowledgements.markdown */,
+				D9DFAB22A2F0748869D09D979C78C3E2 /* Pods-Doctor Bot-acknowledgements.plist */,
+				E282A21E69B80C255353349F92FE643E /* Pods-Doctor Bot-dummy.m */,
+				9F2D3E076095FB8C452866AA1A413F63 /* Pods-Doctor Bot-frameworks.sh */,
+				EB2BE7E0910FE696A2145E4EE88CA5D0 /* Pods-Doctor Bot-Info.plist */,
+				9E67539E0B8F1FED274B9FC16F85A2FB /* Pods-Doctor Bot-umbrella.h */,
+				530DB56FF22D1CEA6F803C0D8984F4B7 /* Pods-Doctor Bot.debug.xcconfig */,
+				39464673730778875C69B4F24CFCD4FC /* Pods-Doctor Bot.release.xcconfig */,
+			);
+			name = "Pods-Doctor Bot";
+			path = "Target Support Files/Pods-Doctor Bot";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C838B6143BAF1053C3EC1FF49387A995 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD2531D41CD4C1DF08221478BF977878 /* Pods-Doctor Bot */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				9F4BAAD67E21DD2B7F444077589AF059 /* Pods */,
+				EF20684E3DCFB97F5C9EA5150A86A543 /* Products */,
+				C838B6143BAF1053C3EC1FF49387A995 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF20684E3DCFB97F5C9EA5150A86A543 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4664D2FAF14F8BCA3759C82AEFAD2023 /* Loafjet.framework */,
+				F16CCADC965B4EF9E3C2FD1744CFE3A6 /* Pods_Doctor_Bot.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F2738BF400820D62FF6C4E57C87ED05C /* Loafjet */ = {
+			isa = PBXGroup;
+			children = (
+				E59FC1927FC7A090D477B01314361D03 /* Loaf.swift */,
+				7327BB0D8400BA5A2A476889DFCE7C10 /* Support Files */,
+			);
+			name = Loafjet;
+			path = Loafjet;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		376CE5B59A0752C0B7325ED26E1A7020 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E19F98E44A1A03BE2E15F1F96AC9A1E4 /* Loafjet-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70A087116A9AF346E1E06AA33F925222 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D406987715FFF0EBB952047ABFD4F4EC /* Pods-Doctor Bot-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1D43D5C44FD44A1FCCCEBF773613899F /* Loafjet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9B86F14BCF45C6553B862461ECC4A4C /* Build configuration list for PBXNativeTarget "Loafjet" */;
+			buildPhases = (
+				376CE5B59A0752C0B7325ED26E1A7020 /* Headers */,
+				4F34A71997B14332307B8422A1C89218 /* Sources */,
+				926B7C5BAFA12E618EED6187B369C70B /* Frameworks */,
+				016B00DFBA0D9E67DA943D5F19AA2C97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Loafjet;
+			productName = Loafjet;
+			productReference = 4664D2FAF14F8BCA3759C82AEFAD2023 /* Loafjet.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6AF704C8FC27A152242EE8F676875985 /* Pods-Doctor Bot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 240CFA940905D9525BA650A90CEAE89E /* Build configuration list for PBXNativeTarget "Pods-Doctor Bot" */;
+			buildPhases = (
+				70A087116A9AF346E1E06AA33F925222 /* Headers */,
+				024D56EE90BAA21E841C6BEF78420F18 /* Sources */,
+				E4C07F7227768AF6C1A202DD5332833C /* Frameworks */,
+				3BE7DB27AA38FB35C6BE75DD66DD1367 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5ED6561A0D28FFF254ADE705B4CC6A9 /* PBXTargetDependency */,
+			);
+			name = "Pods-Doctor Bot";
+			productName = "Pods-Doctor Bot";
+			productReference = F16CCADC965B4EF9E3C2FD1744CFE3A6 /* Pods_Doctor_Bot.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = EF20684E3DCFB97F5C9EA5150A86A543 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D43D5C44FD44A1FCCCEBF773613899F /* Loafjet */,
+				6AF704C8FC27A152242EE8F676875985 /* Pods-Doctor Bot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		016B00DFBA0D9E67DA943D5F19AA2C97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BE7DB27AA38FB35C6BE75DD66DD1367 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		024D56EE90BAA21E841C6BEF78420F18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BF6E1E7651BAFD649AF8214F27EBA52 /* Pods-Doctor Bot-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F34A71997B14332307B8422A1C89218 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F25E76066BD9C3546BB0617FC6743DAC /* Loaf.swift in Sources */,
+				488D4BEE936F58AE1C7565444B3853C4 /* Loafjet-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5ED6561A0D28FFF254ADE705B4CC6A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Loafjet;
+			target = 1D43D5C44FD44A1FCCCEBF773613899F /* Loafjet */;
+			targetProxy = 08AEB6B9AA46EB9AB6BFD3E4D2A96EC6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1A1377720D162D4E18D6BD4EC31620E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3993427FD5FDEC38AA249FAA4C8D39BF /* Loafjet.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Loafjet/Loafjet-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Loafjet/Loafjet-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Loafjet/Loafjet.modulemap";
+				PRODUCT_MODULE_NAME = Loafjet;
+				PRODUCT_NAME = Loafjet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6AE606FED6D5047A38967DBAB628CBF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F579A6F1EFFD2D322E4024B66E679BE /* Loafjet.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Loafjet/Loafjet-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Loafjet/Loafjet-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Loafjet/Loafjet.modulemap";
+				PRODUCT_MODULE_NAME = Loafjet;
+				PRODUCT_NAME = Loafjet;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AAE100FF8C9C4FA388CD2C3365F9B449 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B7AA3DB5376803027073A22197DC86C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39464673730778875C69B4F24CFCD4FC /* Pods-Doctor Bot.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Doctor Bot/Pods-Doctor Bot-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Doctor Bot/Pods-Doctor Bot.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F0D3E8BE5BBDC05E33D6B4B1E8562585 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F3A9B01C0B2522E7840C4EB30D395D56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 530DB56FF22D1CEA6F803C0D8984F4B7 /* Pods-Doctor Bot.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Doctor Bot/Pods-Doctor Bot-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Doctor Bot/Pods-Doctor Bot.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		240CFA940905D9525BA650A90CEAE89E /* Build configuration list for PBXNativeTarget "Pods-Doctor Bot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3A9B01C0B2522E7840C4EB30D395D56 /* Debug */,
+				B7AA3DB5376803027073A22197DC86C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAE100FF8C9C4FA388CD2C3365F9B449 /* Debug */,
+				F0D3E8BE5BBDC05E33D6B4B1E8562585 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9B86F14BCF45C6553B862461ECC4A4C /* Build configuration list for PBXNativeTarget "Loafjet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AE606FED6D5047A38967DBAB628CBF8 /* Debug */,
+				1A1377720D162D4E18D6BD4EC31620E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

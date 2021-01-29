@@ -24,7 +24,7 @@ class SkinCancerVC: UIViewController {
     }
     
     @IBAction func closeBtn(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        self.navigationController?.popToRootViewController(animated: true)
     }
     
     @IBAction func diagnoseBtn(_ sender: Any) {

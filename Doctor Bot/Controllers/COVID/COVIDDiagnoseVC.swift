@@ -27,7 +27,7 @@ class COVIDDiagnoseVC: UIViewController {
     }
     
     @IBAction func closeBtn(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        self.navigationController?.popToRootViewController(animated: true)
     }
     
     @IBAction func addImageBtn(_ sender: Any) {

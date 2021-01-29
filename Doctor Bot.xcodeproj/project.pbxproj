@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10BFCFCA1AB0DEC894353924 /* Pods_Doctor_Bot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBA5E23B26A275C42D2A0D3 /* Pods_Doctor_Bot.framework */; };
 		5522F4A525BCB85700CE7BA4 /* DiagnoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5522F4A425BCB85700CE7BA4 /* DiagnoseViewController.swift */; };
 		5522F4A825BCBB8900CE7BA4 /* COVIDDetector.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 5522F4A725BCBB8900CE7BA4 /* COVIDDetector.mlmodel */; };
+		554264AF25C3C73D004E1C0E /* MedicineBotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554264AE25C3C73D004E1C0E /* MedicineBotViewController.swift */; };
+		554264B425C3EDB6004E1C0E /* MedicineBot.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 554264B325C3EDB6004E1C0E /* MedicineBot.mlmodel */; };
 		55452DFD25BD35C2006D04B6 /* PositiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55452DFC25BD35C2006D04B6 /* PositiveViewController.swift */; };
 		55452E0125BD3609006D04B6 /* NegativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55452E0025BD3609006D04B6 /* NegativeViewController.swift */; };
 		55452E0525BD38B8006D04B6 /* benignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55452E0425BD38B8006D04B6 /* benignViewController.swift */; };
@@ -33,6 +36,8 @@
 /* Begin PBXFileReference section */
 		5522F4A425BCB85700CE7BA4 /* DiagnoseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DiagnoseViewController.swift; path = "Doctor Bot/View/DiagnoseViewController.swift"; sourceTree = SOURCE_ROOT; };
 		5522F4A725BCBB8900CE7BA4 /* COVIDDetector.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = COVIDDetector.mlmodel; sourceTree = "<group>"; };
+		554264AE25C3C73D004E1C0E /* MedicineBotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MedicineBotViewController.swift; path = "Doctor Bot/Controllers/Medicine Bot/MedicineBotViewController.swift"; sourceTree = SOURCE_ROOT; };
+		554264B325C3EDB6004E1C0E /* MedicineBot.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MedicineBot.mlmodel; sourceTree = "<group>"; };
 		55452DFC25BD35C2006D04B6 /* PositiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PositiveViewController.swift; path = "Doctor Bot/Controllers/COVID/PositiveViewController.swift"; sourceTree = SOURCE_ROOT; };
 		55452E0025BD3609006D04B6 /* NegativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegativeViewController.swift; sourceTree = SOURCE_ROOT; };
 		55452E0425BD38B8006D04B6 /* benignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = benignViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +59,9 @@
 		55CC05FA25BC9EB300B66E0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55CC05FD25BC9EB300B66E0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55CC05FF25BC9EB300B66E0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60F052AEF4F7C40DF69E4582 /* Pods-Doctor Bot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doctor Bot.debug.xcconfig"; path = "Target Support Files/Pods-Doctor Bot/Pods-Doctor Bot.debug.xcconfig"; sourceTree = "<group>"; };
+		8CBA5E23B26A275C42D2A0D3 /* Pods_Doctor_Bot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Doctor_Bot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB87BD11A735359A426DA0E0 /* Pods-Doctor Bot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doctor Bot.release.xcconfig"; path = "Target Support Files/Pods-Doctor Bot/Pods-Doctor Bot.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +69,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10BFCFCA1AB0DEC894353924 /* Pods_Doctor_Bot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		554264B125C3C744004E1C0E /* Medicine Bot */ = {
+			isa = PBXGroup;
+			children = (
+				554264AE25C3C73D004E1C0E /* MedicineBotViewController.swift */,
+			);
+			path = "Medicine Bot";
+			sourceTree = "<group>";
+		};
 		55452DFF25BD35F1006D04B6 /* COVID */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +124,7 @@
 		5593396D25BCAC1B00443F6A /* ML Model */ = {
 			isa = PBXGroup;
 			children = (
+				554264B325C3EDB6004E1C0E /* MedicineBot.mlmodel */,
 				5522F4A725BCBB8900CE7BA4 /* COVIDDetector.mlmodel */,
 				5593396625BCAC1600443F6A /* NailDisease.mlmodel */,
 				5593396425BCAC1600443F6A /* skindisease.mlmodel */,
@@ -136,6 +154,7 @@
 		5593397225BCAC4600443F6A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				554264B125C3C744004E1C0E /* Medicine Bot */,
 				55452E1325BD43BA006D04B6 /* Report */,
 				55452E0E25BD4179006D04B6 /* Nail Disease */,
 				55452E0325BD3886006D04B6 /* Skin Cancer */,
@@ -151,6 +170,8 @@
 			children = (
 				55CC05ED25BC9EB200B66E0F /* Doctor Bot */,
 				55CC05EC25BC9EB200B66E0F /* Products */,
+				D201199CE3AD02A04628479C /* Pods */,
+				6C98AD3D8BDFED6185A40BEC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,6 +197,24 @@
 			path = "Doctor Bot";
 			sourceTree = "<group>";
 		};
+		6C98AD3D8BDFED6185A40BEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CBA5E23B26A275C42D2A0D3 /* Pods_Doctor_Bot.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D201199CE3AD02A04628479C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60F052AEF4F7C40DF69E4582 /* Pods-Doctor Bot.debug.xcconfig */,
+				DB87BD11A735359A426DA0E0 /* Pods-Doctor Bot.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -183,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55CC060225BC9EB300B66E0F /* Build configuration list for PBXNativeTarget "Doctor Bot" */;
 			buildPhases = (
+				606DC70FBF0471D6349451FA /* [CP] Check Pods Manifest.lock */,
 				55CC05E725BC9EB200B66E0F /* Sources */,
 				55CC05E825BC9EB200B66E0F /* Frameworks */,
 				55CC05E925BC9EB200B66E0F /* Resources */,
+				A6A41EB3A28D6BD1D676BFCA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -241,6 +282,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		606DC70FBF0471D6349451FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Doctor Bot-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6A41EB3A28D6BD1D676BFCA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Doctor Bot/Pods-Doctor Bot-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Doctor Bot/Pods-Doctor Bot-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Doctor Bot/Pods-Doctor Bot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		55CC05E725BC9EB200B66E0F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -252,10 +335,12 @@
 				55CC05F325BC9EB200B66E0F /* ViewController.swift in Sources */,
 				55452E0125BD3609006D04B6 /* NegativeViewController.swift in Sources */,
 				559A5F6D25BCC0B0004A3CD0 /* NailDiagnoseVC.swift in Sources */,
+				554264B425C3EDB6004E1C0E /* MedicineBot.mlmodel in Sources */,
 				5593396A25BCAC1600443F6A /* NailDisease.mlmodel in Sources */,
 				55452E0C25BD4171006D04B6 /* ReportViewController.swift in Sources */,
 				55452E0525BD38B8006D04B6 /* benignViewController.swift in Sources */,
 				55452E1125BD43B5006D04B6 /* ReportTableViewCell.swift in Sources */,
+				554264AF25C3C73D004E1C0E /* MedicineBotViewController.swift in Sources */,
 				55CC05EF25BC9EB200B66E0F /* AppDelegate.swift in Sources */,
 				5593396B25BCAC1600443F6A /* skinCancer.mlmodel in Sources */,
 				55CC05F125BC9EB200B66E0F /* SceneDelegate.swift in Sources */,
@@ -407,6 +492,7 @@
 		};
 		55CC060325BC9EB300B66E0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60F052AEF4F7C40DF69E4582 /* Pods-Doctor Bot.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -426,6 +512,7 @@
 		};
 		55CC060425BC9EB300B66E0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB87BD11A735359A426DA0E0 /* Pods-Doctor Bot.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

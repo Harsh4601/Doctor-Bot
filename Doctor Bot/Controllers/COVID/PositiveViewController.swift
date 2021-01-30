@@ -16,5 +16,8 @@ class PositiveViewController: UIViewController {
         view1.layer.cornerRadius = 20
     }
     
-
+    @IBAction func backBtn(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }

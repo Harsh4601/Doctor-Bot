@@ -61,6 +61,8 @@ extension ReportViewController: UITableViewDataSource, UITableViewDelegate{
         cell.issueLabel.text = self.reportArray[indexPath.row].issue
         cell.dateLabel.text = self.reportArray[indexPath.row].date
         cell.doctorLabel.text = self.reportArray[indexPath.row].doctor
+        cell.isSelected = false
+        cell.selectionStyle = UITableViewCell.SelectionStyle.none
         return cell
     }
     

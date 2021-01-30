@@ -11,12 +11,14 @@ import Alamofire
 struct Report: Decodable{
     var _id: String
     var date: String
-    var name:String
+    var doctor:String
     var issue:String
-    var blood:String
-    var weight:Int
-    var height:Int
-    var heartDiseases: String
+    var medicine:String
+//    var blood:String
+//    var weight:Int
+//    var height:Int
+//    var heartDiseases: String
+//    var hospital: String
 }
 
 class APIFunctions{
@@ -27,10 +29,10 @@ class APIFunctions{
     
     //MARK:- NOTES FETCHING FUNCTION
     
-    func fetchNotes(){
+    func fetchReport(){
         
         //Enter your local host URL
-        AF.request("http://192.168.1.88081/fetch").response{ response in
+        AF.request("http://192.168.1.8:8082/fetch").response{ response in
             
             //print(response.data)
             
@@ -38,16 +40,18 @@ class APIFunctions{
             
             self.delegate?.updateArray(newArray: data!)
             
+            print(data!)
+            print("hello")
             
         }
     }
     
     //MARK:- ADD NOTES FUNCTION
     
-    func addNote(date: String, name: String, issue: String){
+    func addReport(date: String, doctorName: String, issue: String, medicine:String){
         
         //Enter your local host URL
-        AF.request("http://192.168.1.8:8081/create", method: .post, encoding:  URLEncoding.httpBody, headers: ["name": name, "date": date, "issue": issue]).responseJSON{response in
+        AF.request("http://192.168.1.8:8082/create", method: .post, encoding:  URLEncoding.httpBody, headers: ["doctor": doctorName, "date": date, "issue": issue, "medicine": medicine]).responseJSON{response in
             print(response)
             
         }
@@ -56,10 +60,10 @@ class APIFunctions{
     
     //MARK:- UPDATE NOTES FUNCTION
     
-    func updateNote(date: String, name: String, issue: String, id: String){
+    func updateReport(date: String, doctorName: String, issue: String, medicine:String,id: String){
         
         //Enter your local host URL
-        AF.request("http://1192.168.1.8:8081/update",method: .post, encoding: URLEncoding.httpBody,headers: ["name": name, "date": date, "issue": issue, "id": id]).responseJSON{response in
+        AF.request("http://1192.168.1.8:8082/update",method: .post, encoding: URLEncoding.httpBody,headers: ["doctor": doctorName, "date": date, "issue": issue,"medicine": medicine ,"id": id]).responseJSON{response in
             print(response)
         }
         
@@ -67,9 +71,9 @@ class APIFunctions{
     
     //MARK:- DELETE NOTES FUNCTION
     
-    func deleteNote(id: String){
+    func deleteReport(id: String){
         //Enter your local host URL
-        AF.request("http://192.168.1.8:8081/delete",method: .post, encoding: URLEncoding.httpBody,headers: ["id": id]).responseJSON{response in
+        AF.request("http://192.168.1.8:8082/delete",method: .post, encoding: URLEncoding.httpBody,headers: ["id": id]).responseJSON{response in
             print(response)
         }
     }

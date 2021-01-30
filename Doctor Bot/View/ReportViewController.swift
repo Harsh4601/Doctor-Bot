@@ -26,9 +26,11 @@ class ReportViewController: UIViewController{
         tableView.dataSource = self
         
         APIFunctions.functions.delegate = self
+        APIFunctions.functions.fetchReport()
     }
     @IBAction func addReportBtn(_ sender: Any) {
         //Loaf.PlainLoaf(Message: "hello", Position: .center, AnimationDirection: .Right, LoafjetView: view)
+        self.performSegue(withIdentifier: "forms", sender: nil)
     }
     
 }
@@ -41,13 +43,22 @@ extension ReportViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ReportTableViewCell
-        cell.issueLabel.text = self.reportArray[indexPath.row].issue
+        cell.issueLabel.text = self.reportArray[indexPath.row].medicine
         cell.dateLabel.text = self.reportArray[indexPath.row].date
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 90
+        return 100
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! FormViewController
+        
+        if segue.identifier == "cellValue" {
+            vc.report = reportArray[tableView.indexPathForSelectedRow!.row]
+            vc.update = true
+        }
     }
 }
 

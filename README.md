@@ -40,7 +40,23 @@ This app have a great impact on our society:
 * Do star this repo and/or contribute if you like it.🙂 
 
 # How To Use 🛑 
-* The app consists of 
+* The app consists of four main sections:
+1. Diagnostic Section
+* The diagnostic section consists of various disease diagnosing units. Primarily we have % major units:
+ a. COVID Detection 
+ b. Teeth Diseases 
+ c. Skin Disease 
+ d. Skin cancer 
+ e. Nail Disease 
+ 
+2. Medi-Bot
+* Medi-Bot is a medicine suggetion bot which provides you perfect medicine according to your symptoms . Provide your symptoms to the bot and the bot will show you the best suitable medicine for you. How convenient , isn't it? The same feeling which you can get with a doctor!.
+
+3. Diagnostic History
+* The History section consists of your previous diagnosis details. Forgot about your last diagnosis , get to the history to know about it. We keep your records safe in our app.
+
+4. Report History
+* Irritated with lots of hospital files, use "Report History", we provide you a perfect place where you can save all your previous reports and details. Getover with the mess of handling many files, save your data in Report History and we assure you that your data is protected with Doctor Bot.
 
 # Libraries Used In Project 📒 
 
@@ -61,7 +77,12 @@ This app have a great impact on our society:
 
 
 # Key Features 🔐
-
+* Fast and Secure Diagnosis 
+* Save Money
+* Medical assistance on your hand
+* Report storage locker
+* Biometric Authentication
+* Diagnosis History
 
 # License ⚖️  
 

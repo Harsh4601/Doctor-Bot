@@ -12,7 +12,7 @@ class COVIDDiagnoseVC: UIViewController {
     
     let covidDetector = COVIDDetector()
 
-    let main = ReportViewController()
+    let main = HistoryViewController()
     @IBOutlet weak var imageData: UIImageView!
     @IBOutlet weak var addImageLbl: UILabel!
     

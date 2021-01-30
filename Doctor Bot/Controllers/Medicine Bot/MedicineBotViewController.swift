@@ -29,13 +29,16 @@ class MedicineBotViewController: UIViewController {
         view1.layer.cornerRadius = 30
         view2.layer.cornerRadius = 30
         
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6){
+            Loaf.GradientLoaf(Message: "Medi-Bot", Position: .bottom, LoafWidth: 200, LoafHeight: 40, CornerRadius: 20, FontStyle: "Avenir-Medium", FontSize: 16, BGColor1: .systemGreen, BGColor2: .systemOrange, FontColor: .black, LoafImage: nil, AnimationDirection: .Bottom, Duration: 4, LoafjetView: self.view)
+        }
+        
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
 
         view.addGestureRecognizer(tap)
     }
 
     @objc func dismissKeyboard() {
-        //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
     }
 
@@ -68,6 +71,7 @@ extension MedicineBotViewController{
 
         searches.removeAll()
         searches.append(prediction.label)
+        print(prediction.label)
         tableView.reloadData()
         view.endEditing(true)
     }
@@ -83,6 +87,7 @@ extension MedicineBotViewController: UITableViewDelegate, UITableViewDataSource{
         cell.textLabel?.text = searches[indexPath.row]
         cell.textLabel?.font = UIFont(name: "Avenir-Medium", size: 18)
         cell.textLabel?.numberOfLines =  3
+        cell.isSelected = false
         cell.selectionStyle = UITableViewCell.SelectionStyle.none
         return cell
     }

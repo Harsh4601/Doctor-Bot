@@ -10,13 +10,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/Loafjet.svg?style=flat)](https://cocoapods.org/pods/Loafjet)
 
 ## About 📒
-Lofjet is a Toast generator library which allows the user to add customised Toast to his project. Loafjet comes with various types of Toast animation as well as toast position. It can be used to add gradient and plain toasts. Loafjet comes with extra features like Popup Card and Loading Indicator. This Popup Cards and Loading Indicator can be customised according to the needs.
-
-## Playground 💻
-
-* I've provided an example project to showcase uses of Loafjet! Simply clone this repo, and open `Loafjet.xcworkspace`.
-* Run `pod install`.
-* Here you can see and experiment custom Loaf styles in `Examples.swift`.
+Loafjet is a Toast generator library which allows the user to add customised Toasts to his/her projects. Loafjet comes with various types of Toast Animations as well as Toast Positions. It can be used to add gradient and plain toasts. Loafjet comes with extra features like Popup Card and Loading Indicator which can be customised according to your needs.
 
 ## Requirements
 
@@ -30,6 +24,12 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'Loafjet'
 ```
+## Playground 💻
+
+* I've provided a demo project to showcase the uses of Loafjet! Simply clone this repo, and open `Loafjet.xcworkspace`.
+* Run `pod install`.
+* Here you can see and experiment custom Loaf styles in `Examples.swift`.
+
 # How To Use 📁 ?
 From any view controller, a Loaf can be presented by calling:
 
@@ -151,7 +151,8 @@ Bottom | ✅ | ✅ | ❌ | ✅
 | Success | Error | Device Detection |
 <img width="345" alt="Screenshot 2021-01-27 at 2 04 43 AM" src="https://user-images.githubusercontent.com/56252259/105902751-136f4000-6045-11eb-8412-d7565d39a753.png"> | <img width="345" alt="Screenshot 2021-01-27 at 2 05 00 AM" src="https://user-images.githubusercontent.com/56252259/105902752-1407d680-6045-11eb-8fae-33fbd96e61e2.png">  | <img width="345" alt="Screenshot 2021-01-27 at 2 05 14 AM" src="https://user-images.githubusercontent.com/56252259/105902753-14a06d00-6045-11eb-8d1c-e8d77aac8d9d.png">
 
-# Loafjet+ (Additional features)
+# Loafjet + 
+### Additional features
 
 * `Gradient Loafwheel` & `Popup card` are the additional customisation which you get in Loafjet🥳.
 

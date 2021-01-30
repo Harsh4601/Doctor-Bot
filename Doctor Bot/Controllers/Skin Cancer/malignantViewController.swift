@@ -16,7 +16,10 @@ class malignantViewController: UIViewController {
         view1.layer.cornerRadius = 20
     }
     
-
+    @IBAction func backBtn(_ sender: Any) {
+        self.navigationController?.popToRootViewController(animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 

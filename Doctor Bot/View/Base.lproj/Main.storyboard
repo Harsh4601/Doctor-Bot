@@ -956,13 +956,13 @@
         <!--Positive View Controller-->
         <scene sceneID="9Om-0L-eWq">
             <objects>
-                <viewController id="D0Y-ti-wU2" customClass="PositiveViewController" customModule="Doctor_Bot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="pageSheet" id="D0Y-ti-wU2" customClass="PositiveViewController" customModule="Doctor_Bot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IQU-IK-nFX">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5BG-eD-bCj">
-                                <rect key="frame" x="31" y="35" width="365" height="803"/>
+                                <rect key="frame" x="31" y="112" width="365" height="803"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="safe" translatesAutoresizingMaskIntoConstraints="NO" id="8BT-O8-Cuy">
@@ -1007,6 +1007,19 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vin-fC-sFz">
+                                <rect key="frame" x="17" y="66" width="28" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="chevron.left" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="38" weight="regular"/>
+                                </state>
+                                <connections>
+                                    <action selector="backBtn:" destination="D0Y-ti-wU2" eventType="touchUpInside" id="VN6-hq-OZ4"/>
+                                    <action selector="closeBtn:" destination="Ft5-Jf-KSr" eventType="touchUpInside" id="NCS-Gv-JcU"/>
+                                    <action selector="closeBtn:" destination="0f2-gv-YT3" eventType="touchUpInside" id="hYr-1N-klH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LRr-9z-4mz"/>
                         <color key="backgroundColor" red="0.40000000000000002" green="0.43921568630000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1227,7 +1240,7 @@
                         <outlet property="skinImage" destination="Hf8-cZ-Q5a" id="JbR-vP-UBM"/>
                         <outlet property="view1" destination="zCs-3l-p53" id="GXv-TW-bwh"/>
                         <segue destination="Voy-Aq-hbE" kind="show" identifier="benign" id="xqC-pP-sE5"/>
-                        <segue destination="cSE-eO-Hf4" kind="show" identifier="maligant" id="gkZ-RR-6O3"/>
+                        <segue destination="cSE-eO-Hf4" kind="show" identifier="malignant" id="gkZ-RR-6O3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ZS-A5-Vce" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1242,13 +1255,13 @@
         <!--Negative View Controller-->
         <scene sceneID="uep-jc-rq1">
             <objects>
-                <viewController id="bJO-By-TYA" customClass="NegativeViewController" customModule="Doctor_Bot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="pageSheet" id="bJO-By-TYA" customClass="NegativeViewController" customModule="Doctor_Bot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xxf-yw-Eif">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UE0-c7-yqc">
-                                <rect key="frame" x="32" y="35" width="365" height="803"/>
+                                <rect key="frame" x="32" y="109" width="365" height="803"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THJ-u8-sKP">
@@ -1295,6 +1308,20 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWN-ad-lsJ">
+                                <rect key="frame" x="32" y="59" width="28" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="chevron.left" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="38" weight="regular"/>
+                                </state>
+                                <connections>
+                                    <action selector="backBtn:" destination="bJO-By-TYA" eventType="touchUpInside" id="OhK-k4-wK7"/>
+                                    <action selector="backBtn:" destination="D0Y-ti-wU2" eventType="touchUpInside" id="d1d-uh-W4V"/>
+                                    <action selector="closeBtn:" destination="0f2-gv-YT3" eventType="touchUpInside" id="ZWW-Xn-2Lk"/>
+                                    <action selector="closeBtn:" destination="Ft5-Jf-KSr" eventType="touchUpInside" id="cfI-Zw-32a"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5kz-mo-2Cp"/>
                         <color key="backgroundColor" red="0.40000000000000002" green="0.43921568630000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1317,7 +1344,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BgO-e1-AJ1">
-                                <rect key="frame" x="32" y="35" width="365" height="803"/>
+                                <rect key="frame" x="32" y="95" width="365" height="803"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUA-bt-BzY">
@@ -1421,6 +1448,19 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p65-5z-ctY">
+                                <rect key="frame" x="32" y="47" width="28" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="chevron.left" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="38" weight="regular"/>
+                                </state>
+                                <connections>
+                                    <action selector="backBtn:" destination="Voy-Aq-hbE" eventType="touchUpInside" id="qcu-u5-xRz"/>
+                                    <action selector="closeBtn:" destination="zW9-2F-Bs0" eventType="touchUpInside" id="U6Q-05-I5S"/>
+                                    <action selector="closeBtn:" destination="0f2-gv-YT3" eventType="touchUpInside" id="r0R-Ca-ZTb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6bv-rn-Eo5"/>
                         <color key="backgroundColor" red="0.40000000000000002" green="0.43921568630000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1443,7 +1483,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="py1-yU-XQa">
-                                <rect key="frame" x="32" y="35" width="365" height="803"/>
+                                <rect key="frame" x="32" y="93" width="365" height="803"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMp-Mt-NFh">
@@ -1547,6 +1587,19 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGL-M9-2h8">
+                                <rect key="frame" x="36" y="35" width="28" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="chevron.left" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="38" weight="regular"/>
+                                </state>
+                                <connections>
+                                    <action selector="backBtn:" destination="cSE-eO-Hf4" eventType="touchUpInside" id="fBk-ur-u02"/>
+                                    <action selector="closeBtn:" destination="0f2-gv-YT3" eventType="touchUpInside" id="6Np-wb-lef"/>
+                                    <action selector="closeBtn:" destination="zW9-2F-Bs0" eventType="touchUpInside" id="Z3g-vW-Clh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JJq-FY-7Lt"/>
                         <color key="backgroundColor" red="0.40000000000000002" green="0.43921568630000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

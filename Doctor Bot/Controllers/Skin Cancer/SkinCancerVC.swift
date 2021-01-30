@@ -62,9 +62,11 @@ extension SkinCancerVC{
                 let res = result.classLabel
                 
                 if res == "benign"{
+                    print("what")
                     self.performSegue(withIdentifier: "benign", sender: nil)
                 }
                 else if res == "malignant"{
+                    print("whatssdsd")
                     self.performSegue(withIdentifier: "malignant", sender: nil)
                 }
                 else{

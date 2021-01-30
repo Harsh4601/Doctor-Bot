@@ -32,7 +32,7 @@ class APIFunctions{
     func fetchReport(){
         
         //Enter your local host URL
-        AF.request("http://192.168.1.8:8082/fetch").response{ response in
+        AF.request("http://IPaddress/fetch").response{ response in
             
             //print(response.data)
             
@@ -51,7 +51,7 @@ class APIFunctions{
     func addReport(date: String, doctorName: String, issue: String, medicine:String, blood:String){
         
         //Enter your local host URL
-        AF.request("http://192.168.1.8:8082/create", method: .post, encoding:  URLEncoding.httpBody, headers: ["doctor": doctorName, "date": date, "issue": issue, "medicine": medicine, "blood": blood]).responseJSON{response in
+        AF.request("http://IPaddress/create", method: .post, encoding:  URLEncoding.httpBody, headers: ["doctor": doctorName, "date": date, "issue": issue, "medicine": medicine, "blood": blood]).responseJSON{response in
             print(response)
             
         }
@@ -63,7 +63,7 @@ class APIFunctions{
     func updateReport(date: String, doctorName: String, issue: String, medicine:String,id: String){
         
         //Enter your local host URL
-        AF.request("http://1192.168.1.8:8082/update",method: .post, encoding: URLEncoding.httpBody,headers: ["doctor": doctorName, "date": date, "issue": issue,"medicine": medicine ,"id": id]).responseJSON{response in
+        AF.request("http://IPaddress/update",method: .post, encoding: URLEncoding.httpBody,headers: ["doctor": doctorName, "date": date, "issue": issue,"medicine": medicine ,"id": id]).responseJSON{response in
             print(response)
         }
         
@@ -73,7 +73,7 @@ class APIFunctions{
     
     func deleteReport(id: String){
         //Enter your local host URL
-        AF.request("http://192.168.1.8:8082/delete",method: .post, encoding: URLEncoding.httpBody,headers: ["id": id]).responseJSON{response in
+        AF.request("http://IPaddress/delete",method: .post, encoding: URLEncoding.httpBody,headers: ["id": id]).responseJSON{response in
             print(response)
         }
     }

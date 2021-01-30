@@ -42,12 +42,12 @@ This app have a great impact on our society:
 # How To Use 🛑 
 * The app consists of four main sections:
 1. Diagnostic Section
-* The diagnostic section consists of various disease diagnosing units. Primarily we have % major units:
- a. COVID Detection 
- b. Teeth Diseases 
- c. Skin Disease 
- d. Skin cancer 
- e. Nail Disease 
+* The diagnostic section consists of various disease diagnosing units. Primarily we have % major units:  <br>
+ a. COVID Detection <br>
+ b. Teeth Disease  <br>
+ c. Skin Disease  <br>
+ d. Skin cancer  <br>
+ e. Nail Disease  <br>
  
 2. Medi-Bot
 * Medi-Bot is a medicine suggetion bot which provides you perfect medicine according to your symptoms . Provide your symptoms to the bot and the bot will show you the best suitable medicine for you. How convenient , isn't it? The same feeling which you can get with a doctor!.
@@ -58,14 +58,6 @@ This app have a great impact on our society:
 4. Report History
 * Irritated with lots of hospital files, use "Report History", we provide you a perfect place where you can save all your previous reports and details. Getover with the mess of handling many files, save your data in Report History and we assure you that your data is protected with Doctor Bot.
 
-# Libraries Used In Project 📒 
-
-* UIKit <br>
-* CoreML
-* Message UI
-* AVKit 
-* Foundation
-
 # Snapshots of App 📸
 
 <p align = "center">
@@ -75,6 +67,18 @@ This app have a great impact on our society:
 
 </p>
 
+# Libraries Used In Project 📒 
+
+* UIKit <br>
+* CoreML
+* Message UI
+* AVKit 
+* Foundation
+
+# External Libraries Used 📦
+
+* [Loafjet](https://github.com/gokulnair2001/Loafjet)This library is made by one of our developer!
+* [Alamofire](https://github.com/Alamofire/Alamofire)
 
 # Key Features 🔐
 * Fast and Secure Diagnosis 
@@ -86,7 +90,7 @@ This app have a great impact on our society:
 
 # License ⚖️  
 
-MIT License<br> Please read the [License]() file for details.
+MIT License<br> Please read the [License](https://github.com/gokulnair2001/Doctor-Bot/blob/master/LICENSE) file for details.
 
 # How to Contribute 🖋 
 

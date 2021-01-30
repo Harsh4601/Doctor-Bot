@@ -62,7 +62,7 @@ This app have a great impact on our society:
 
 <p align = "center">
 
-<img width="1245" alt="Screenshot 2021-01-30 at 7 57 29 PM" src="https://user-images.githubusercontent.com/56252259/106358984-6e4eb300-6335-11eb-9bd7-62d4c203f7b6.png">
+<img width="1245" alt="Screenshot 2021-01-30 at 9 12 28 PM" src="https://user-images.githubusercontent.com/56252259/106360685-e02bfa00-633f-11eb-879d-fe8e9bf7a807.png">
 <img width="1240" alt="Screenshot 2021-01-30 at 7 57 14 PM" src="https://user-images.githubusercontent.com/56252259/106358980-68f16880-6335-11eb-9ee4-35e98762b7fc.png">
 
 </p>

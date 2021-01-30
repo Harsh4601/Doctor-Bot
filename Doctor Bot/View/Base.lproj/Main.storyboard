@@ -181,7 +181,7 @@
                         <segue destination="ktw-NO-ww3" kind="show" identifier="diagnose" id="AnC-dV-XTz"/>
                         <segue destination="nvh-XB-1ov" kind="show" identifier="report" id="nRF-QG-lJO"/>
                         <segue destination="iTv-be-qMp" kind="show" identifier="medicine" id="S3e-GB-8Fd"/>
-                        <segue destination="FJ6-8l-aCN" kind="show" identifier="reportss" id="IEe-Fg-Ph1"/>
+                        <segue destination="ql7-M7-inC" kind="show" identifier="reportss" id="IEe-Fg-Ph1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y8H-DO-C8p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -351,7 +351,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="FJ6-8l-aCN" customClass="ReportViewController" customModule="Doctor_Bot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yl8-KS-yU0">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0uX-T4-vay">
@@ -407,11 +407,60 @@
                     <navigationItem key="navigationItem" id="R5x-aI-fQJ"/>
                     <connections>
                         <outlet property="tableView" destination="0uX-T4-vay" id="fcE-EC-xkq"/>
+                        <segue destination="hxw-Gf-ZT3" kind="show" identifier="forms" id="Ghu-4e-5tS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iGr-tD-bTd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2534.5794392523362" y="946.65226781857461"/>
+            <point key="canvasLocation" x="3434.5794392523362" y="946.65226781857461"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="bC8-mN-UHb">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="hxw-Gf-ZT3" customClass="DetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8hs-ue-TAj">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5t-7y-B2e">
+                                <rect key="frame" x="20" y="29" width="30" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="chevron.left" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="40" weight="medium"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6QX-zw-FAU">
+                                <rect key="frame" x="325" y="30" width="34" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" image="trash" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" weight="medium"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gy2-16-ZQS">
+                                <rect key="frame" x="387" y="33" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <state key="normal" image="plus" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30" weight="medium"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ft-yf-BvK">
+                                <rect key="frame" x="20" y="147" width="388" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NrV-Er-FlG"/>
+                        <color key="backgroundColor" red="0.40000000000000002" green="0.43921568630000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ju8-Yu-VL7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="orJ-F9-KRf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4200" y="946.65226781857461"/>
         </scene>
         <!--Diagnose View Controller-->
         <scene sceneID="k0Y-Qs-k7q">
@@ -1425,6 +1474,24 @@
             </objects>
             <point key="canvasLocation" x="-1499" y="947"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sbO-ya-TsZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" navigationBarHidden="YES" id="ql7-M7-inC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="R8o-mE-bLH"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cv4-2B-SVy">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FJ6-8l-aCN" kind="relationship" relationship="rootViewController" id="Oib-Ce-wxz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cko-iO-0w1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2534.5794392523362" y="946.65226781857461"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Image" width="1256" height="1104"/>
@@ -1450,6 +1517,7 @@
         <image name="pills1" width="400" height="400"/>
         <image name="pills2" width="400" height="400"/>
         <image name="pills3" width="400" height="400"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <image name="plus.app" catalog="system" width="128" height="114"/>
         <image name="safe" width="1248" height="752"/>
         <image name="skin" width="258" height="264"/>
@@ -1461,10 +1529,14 @@
         <image name="skindiag" width="1169" height="896"/>
         <image name="staroflife" catalog="system" width="124" height="128"/>
         <image name="teeth" width="640" height="640"/>
+        <image name="trash" catalog="system" width="121" height="128"/>
         <image name="trial" width="558" height="280"/>
         <image name="waveform.path.ecg" catalog="system" width="128" height="124"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

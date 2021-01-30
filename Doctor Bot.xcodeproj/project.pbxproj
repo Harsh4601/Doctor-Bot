@@ -14,6 +14,7 @@
 		5537D76225C50E5800E9EAF8 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5537D76125C50E5800E9EAF8 /* ReportViewController.swift */; };
 		5537D76525C50E6800E9EAF8 /* ReportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5537D76425C50E6800E9EAF8 /* ReportTableViewCell.swift */; };
 		5537D76825C5102500E9EAF8 /* APIFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5537D76725C5102500E9EAF8 /* APIFunctions.swift */; };
+		5537D76B25C52CF500E9EAF8 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5537D76A25C52CF500E9EAF8 /* DetailsViewController.swift */; };
 		554264AF25C3C73D004E1C0E /* MedicineBotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554264AE25C3C73D004E1C0E /* MedicineBotViewController.swift */; };
 		554264B425C3EDB6004E1C0E /* MedicineBot.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 554264B325C3EDB6004E1C0E /* MedicineBot.mlmodel */; };
 		55452DFD25BD35C2006D04B6 /* PositiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55452DFC25BD35C2006D04B6 /* PositiveViewController.swift */; };
@@ -43,6 +44,7 @@
 		5537D76125C50E5800E9EAF8 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReportViewController.swift; path = "Doctor Bot/View/ReportViewController.swift"; sourceTree = SOURCE_ROOT; };
 		5537D76425C50E6800E9EAF8 /* ReportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportTableViewCell.swift; sourceTree = "<group>"; };
 		5537D76725C5102500E9EAF8 /* APIFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = APIFunctions.swift; path = "Doctor Bot/Controllers/Report/APIFunctions.swift"; sourceTree = SOURCE_ROOT; };
+		5537D76A25C52CF500E9EAF8 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailsViewController.swift; path = "Doctor Bot/View/DetailsViewController.swift"; sourceTree = SOURCE_ROOT; };
 		554264AE25C3C73D004E1C0E /* MedicineBotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MedicineBotViewController.swift; path = "Doctor Bot/Controllers/Medicine Bot/MedicineBotViewController.swift"; sourceTree = SOURCE_ROOT; };
 		554264B325C3EDB6004E1C0E /* MedicineBot.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MedicineBot.mlmodel; sourceTree = "<group>"; };
 		55452DFC25BD35C2006D04B6 /* PositiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PositiveViewController.swift; path = "Doctor Bot/Controllers/COVID/PositiveViewController.swift"; sourceTree = SOURCE_ROOT; };
@@ -132,6 +134,7 @@
 		55452E1325BD43BA006D04B6 /* Report */ = {
 			isa = PBXGroup;
 			children = (
+				5537D76A25C52CF500E9EAF8 /* DetailsViewController.swift */,
 				5537D76125C50E5800E9EAF8 /* ReportViewController.swift */,
 				5537D76425C50E6800E9EAF8 /* ReportTableViewCell.swift */,
 			);
@@ -364,6 +367,7 @@
 				5593396A25BCAC1600443F6A /* NailDisease.mlmodel in Sources */,
 				55452E0C25BD4171006D04B6 /* HistoryViewController.swift in Sources */,
 				5537D76525C50E6800E9EAF8 /* ReportTableViewCell.swift in Sources */,
+				5537D76B25C52CF500E9EAF8 /* DetailsViewController.swift in Sources */,
 				55452E0525BD38B8006D04B6 /* benignViewController.swift in Sources */,
 				55452E1125BD43B5006D04B6 /* HistoryTableViewCell.swift in Sources */,
 				554264AF25C3C73D004E1C0E /* MedicineBotViewController.swift in Sources */,

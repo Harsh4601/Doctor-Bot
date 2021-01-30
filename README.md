@@ -23,7 +23,12 @@ The idea behind construction of this app was to remove mental pressure of people
 So our idea was to create an app which provides 100% guidance and suggestions to a patient regardless of going to the hospital.
 
 # Impact on Society 🌏
-
+This app have a great impact on our society:
+* Reduction in use of carbon films. 
+* Secure and safe storage of your report.
+* Less mental pressure.
+* Reduction in capital spent on hospitals .
+* Record history of diagnostic checkups.
 
 # Steps to run 📲
 
@@ -35,6 +40,7 @@ So our idea was to create an app which provides 100% guidance and suggestions to
 * Do star this repo and/or contribute if you like it.🙂 
 
 # How To Use 🛑 
+* The app consists of 
 
 # Libraries Used In Project 📒 
 

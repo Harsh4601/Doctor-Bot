@@ -1,5 +1,5 @@
 PODS:
-  - Loafjet (1.0.0)
+  - Loafjet (1.0.1)
 
 DEPENDENCIES:
   - Loafjet
@@ -9,7 +9,7 @@ SPEC REPOS:
     - Loafjet
 
 SPEC CHECKSUMS:
-  Loafjet: 598344d5593f58a9aeb89c2b1745f5a2eb710c2c
+  Loafjet: c106db4411c645eff6251d204ce95d3b7ad2f8d1
 
 PODFILE CHECKSUM: 836164a4eaaaa53e01e53f4b01a48f2e48264a26
 

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Loafjet
 
 class ViewController: UIViewController {
 
@@ -46,6 +47,8 @@ class ViewController: UIViewController {
         emergencyBtn.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         
         profileImage.layer.cornerRadius = 5
+        
+        Loaf.GradientLoaf(Message: "Welcome to Doctor Bot", Position: .bottom, LoafWidth: 250, LoafHeight: 50, CornerRadius: 20, FontStyle: "Avenir-Medium", FontSize: 16, BGColor1: .systemIndigo, BGColor2: .systemOrange, FontColor: .black, LoafImage: nil, AnimationDirection: .Bottom, Duration: 1.5, LoafjetView: view)
     }
 
     @IBAction func diagnoseButton(_ sender: Any) {
@@ -55,8 +58,11 @@ class ViewController: UIViewController {
         self.performSegue(withIdentifier: "medicine", sender: nil)
     }
     
-    @IBAction func reportBtn(_ sender: Any) {
+    @IBAction func historyBtn(_ sender: Any) {
         self.performSegue(withIdentifier: "report", sender: nil)
+    }
+    @IBAction func reportButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "reportss", sender: nil)
     }
 }
 

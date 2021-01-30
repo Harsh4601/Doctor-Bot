@@ -83,7 +83,7 @@
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="54" weight="regular"/>
                                         </state>
                                         <connections>
-                                            <action selector="reportBtn:" destination="88E-xC-N2B" eventType="touchUpInside" id="XOk-D1-w7d"/>
+                                            <action selector="historyBtn:" destination="88E-xC-N2B" eventType="touchUpInside" id="XOk-D1-w7d"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKi-Eq-YLp">
@@ -91,9 +91,12 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="0.83867468420000002" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" red="0.40000000000000002" green="0.34456027280000001" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" image="person.crop.circle.badge.exclamationmark" catalog="system">
+                                        <state key="normal" image="person" catalog="system">
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="54" weight="regular"/>
                                         </state>
+                                        <connections>
+                                            <action selector="reportButton:" destination="88E-xC-N2B" eventType="touchUpInside" id="7fV-Xj-8Jn"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What do you need ?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKj-KC-eMt">
                                         <rect key="frame" x="46" y="253" width="284" height="53"/>
@@ -129,15 +132,15 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Report" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZ0-Dg-YZH">
-                                        <rect key="frame" x="185" y="501" width="52" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZ0-Dg-YZH">
+                                        <rect key="frame" x="185" y="501" width="55" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Emergency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcM-xL-4Vw">
-                                        <rect key="frame" x="303" y="501" width="86" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Report" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcM-xL-4Vw">
+                                        <rect key="frame" x="319" y="501" width="52" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -178,11 +181,12 @@
                         <segue destination="ktw-NO-ww3" kind="show" identifier="diagnose" id="AnC-dV-XTz"/>
                         <segue destination="nvh-XB-1ov" kind="show" identifier="report" id="nRF-QG-lJO"/>
                         <segue destination="iTv-be-qMp" kind="show" identifier="medicine" id="S3e-GB-8Fd"/>
+                        <segue destination="FJ6-8l-aCN" kind="show" identifier="reportss" id="IEe-Fg-Ph1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y8H-DO-C8p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="15.420560747663551" y="143.84449244060477"/>
+            <point key="canvasLocation" x="109" y="144"/>
         </scene>
         <!--Medicine Bot View Controller-->
         <scene sceneID="uXo-aN-GeL">
@@ -340,7 +344,74 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dA6-ai-Acv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1006.5420560747663" y="143.84449244060477"/>
+            <point key="canvasLocation" x="1489" y="947"/>
+        </scene>
+        <!--Report View Controller-->
+        <scene sceneID="dRO-MU-Vre">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="FJ6-8l-aCN" customClass="ReportViewController" customModule="Doctor_Bot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yl8-KS-yU0">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0uX-T4-vay">
+                                <rect key="frame" x="0.0" y="280" width="428" height="646"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="90" id="vnV-ag-10e" customClass="ReportTableViewCell" customModule="Doctor_Bot" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="428" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vnV-ag-10e" id="ZIt-BA-hOY">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Issue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2BS-w5-IcM">
+                                                    <rect key="frame" x="20" y="13" width="388" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rwo-xm-GzJ">
+                                                    <rect key="frame" x="20" y="47" width="388" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="Rwo-xm-GzJ" id="oIA-I9-EBs"/>
+                                            <outlet property="issueLabel" destination="2BS-w5-IcM" id="S3F-Yq-0ZN"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkg-Ob-GN4">
+                                <rect key="frame" x="29" y="857" width="42" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="plus.app" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="36"/>
+                                </state>
+                                <connections>
+                                    <action selector="addReportBtn:" destination="FJ6-8l-aCN" eventType="touchUpInside" id="7Mf-NV-4Uu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="G8W-RM-t5h"/>
+                        <color key="backgroundColor" red="0.40000000000000002" green="0.43921568630000002" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="R5x-aI-fQJ"/>
+                    <connections>
+                        <outlet property="tableView" destination="0uX-T4-vay" id="fcE-EC-xkq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iGr-tD-bTd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2534.5794392523362" y="946.65226781857461"/>
         </scene>
         <!--Diagnose View Controller-->
         <scene sceneID="k0Y-Qs-k7q">
@@ -520,12 +591,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EPu-mw-K6d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="535.51401869158872" y="872.7861771058316"/>
+            <point key="canvasLocation" x="-599" y="947"/>
         </scene>
-        <!--Report View Controller-->
+        <!--History View Controller-->
         <scene sceneID="4Qe-qO-UPe">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="nvh-XB-1ov" customClass="ReportViewController" customModule="Doctor_Bot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="nvh-XB-1ov" customClass="HistoryViewController" customModule="Doctor_Bot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TqO-nD-yQ5">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -551,7 +622,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="121" id="i95-zD-jtj" customClass="ReportTableViewCell" customModule="Doctor_Bot" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="121" id="i95-zD-jtj" customClass="HistoryTableViewCell" customModule="Doctor_Bot" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="428" height="121"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="i95-zD-jtj" id="Sh8-E5-phf">
@@ -612,7 +683,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oBj-0W-iii" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1551.8691588785045" y="872.7861771058316"/>
+            <point key="canvasLocation" x="418" y="947"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="zfT-0w-bKz">
@@ -640,7 +711,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n6c-xf-cqr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1033" y="1573"/>
+            <point key="canvasLocation" x="-1035" y="1766"/>
         </scene>
         <!--DiagnoseVC-->
         <scene sceneID="GE9-pL-xzN">
@@ -727,7 +798,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-1692.0560747663551" y="1572.5701943844495"/>
+            <point key="canvasLocation" x="-1693" y="1766"/>
         </scene>
         <!--Positive View Controller-->
         <scene sceneID="9Om-0L-eWq">
@@ -794,7 +865,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q3H-TG-ofc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2172.897196261682" y="2278.8336933045357"/>
+            <point key="canvasLocation" x="-2160" y="2544"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mhe-pa-Wsq">
@@ -822,7 +893,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u9e-7u-iUb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-381" y="1573"/>
+            <point key="canvasLocation" x="-383" y="1766"/>
         </scene>
         <!--Nail DiagnoseVC-->
         <scene sceneID="DJq-cF-1tv">
@@ -925,7 +996,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="305.60747663551399" y="1572.5701943844495"/>
+            <point key="canvasLocation" x="304" y="1766"/>
         </scene>
         <!--Skin CancerVC-->
         <scene sceneID="gSR-KK-Ede">
@@ -1013,7 +1084,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="961.68224299065412" y="1572.5701943844495"/>
+            <point key="canvasLocation" x="960" y="1766"/>
         </scene>
         <!--Negative View Controller-->
         <scene sceneID="uep-jc-rq1">
@@ -1082,7 +1153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="98h-Lh-nqq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1459" y="2279"/>
+            <point key="canvasLocation" x="-1447" y="2544"/>
         </scene>
         <!--Benign View Controller-->
         <scene sceneID="XRl-DD-xck">
@@ -1208,7 +1279,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CSb-2R-Fdg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="488" y="2279"/>
+            <point key="canvasLocation" x="500" y="2544"/>
         </scene>
         <!--Malignant View Controller-->
         <scene sceneID="kKJ-xw-g42">
@@ -1334,7 +1405,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e6m-Yn-Gk0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1384" y="2279"/>
+            <point key="canvasLocation" x="1396" y="2544"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lr6-By-0Pt">
@@ -1352,7 +1423,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ztz-9n-UHV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-364.48598130841117" y="872.7861771058316"/>
+            <point key="canvasLocation" x="-1499" y="947"/>
         </scene>
     </scenes>
     <resources>
@@ -1373,12 +1444,13 @@
         <image name="magnifyingglass.circle" catalog="system" width="128" height="121"/>
         <image name="nail" width="128" height="128"/>
         <image name="naildiag" width="1066" height="801"/>
-        <image name="person.crop.circle.badge.exclamationmark" catalog="system" width="128" height="113"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <image name="pill" width="400" height="400"/>
         <image name="pills" catalog="system" width="128" height="104"/>
         <image name="pills1" width="400" height="400"/>
         <image name="pills2" width="400" height="400"/>
         <image name="pills3" width="400" height="400"/>
+        <image name="plus.app" catalog="system" width="128" height="114"/>
         <image name="safe" width="1248" height="752"/>
         <image name="skin" width="258" height="264"/>
         <image name="skinc1" width="569" height="358"/>

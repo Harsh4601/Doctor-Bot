@@ -30,6 +30,10 @@ This app have a great impact on our society:
 * Reduction in capital spent on hospitals .
 * Record history of diagnostic checkups.
 
+# Database 🎚
+* The whole app works on custom database. The backend is made with MonoDB and Express and written on NodeJS.
+* Due to some privacy policy we had not added the backend code here. If you want to get an idea about the backend visit [Ping!](https://github.com/gokulnair2001/Ping-App-Backend). This app is made by our Developer only!.
+
 # Steps to run 📲
 
 * Clone or download the app from this repository. 👩‍💻

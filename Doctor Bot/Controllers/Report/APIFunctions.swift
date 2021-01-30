@@ -14,7 +14,7 @@ struct Report: Decodable{
     var doctor:String
     var issue:String
     var medicine:String
-//    var blood:String
+    var blood:String
 //    var weight:Int
 //    var height:Int
 //    var heartDiseases: String
@@ -48,10 +48,10 @@ class APIFunctions{
     
     //MARK:- ADD NOTES FUNCTION
     
-    func addReport(date: String, doctorName: String, issue: String, medicine:String){
+    func addReport(date: String, doctorName: String, issue: String, medicine:String, blood:String){
         
         //Enter your local host URL
-        AF.request("http://192.168.1.8:8082/create", method: .post, encoding:  URLEncoding.httpBody, headers: ["doctor": doctorName, "date": date, "issue": issue, "medicine": medicine]).responseJSON{response in
+        AF.request("http://192.168.1.8:8082/create", method: .post, encoding:  URLEncoding.httpBody, headers: ["doctor": doctorName, "date": date, "issue": issue, "medicine": medicine, "blood": blood]).responseJSON{response in
             print(response)
             
         }

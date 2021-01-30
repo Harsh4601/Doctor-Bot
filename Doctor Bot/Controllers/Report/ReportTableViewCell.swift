@@ -11,6 +11,7 @@ class ReportTableViewCell: UITableViewCell {
 
     @IBOutlet var issueLabel: UILabel!
     @IBOutlet var dateLabel: UILabel!
+    @IBOutlet weak var doctorLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

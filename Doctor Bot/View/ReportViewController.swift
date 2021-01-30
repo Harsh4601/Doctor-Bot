@@ -24,6 +24,7 @@ class ReportViewController: UIViewController{
 
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.layer.cornerRadius = 30
         
         APIFunctions.functions.delegate = self
         APIFunctions.functions.fetchReport()
@@ -33,6 +34,20 @@ class ReportViewController: UIViewController{
         self.performSegue(withIdentifier: "forms", sender: nil)
     }
     
+    @IBAction func backButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    // UPDATING THE VIEW
+    
+    override func viewWillAppear(_ animated: Bool) {
+        APIFunctions.functions.fetchReport()
+    }
+    
+
+    override func viewDidAppear(_ animated: Bool) {
+        APIFunctions.functions.fetchReport()
+    }
 }
 
 extension ReportViewController: UITableViewDataSource, UITableViewDelegate{
@@ -43,13 +58,14 @@ extension ReportViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ReportTableViewCell
-        cell.issueLabel.text = self.reportArray[indexPath.row].medicine
+        cell.issueLabel.text = self.reportArray[indexPath.row].issue
         cell.dateLabel.text = self.reportArray[indexPath.row].date
+        cell.doctorLabel.text = self.reportArray[indexPath.row].doctor
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 90
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

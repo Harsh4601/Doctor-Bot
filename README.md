@@ -67,7 +67,7 @@ This app have a great impact on our society:
 
 </p>
 
-# Libraries Used In Project 📒 
+# Inbuilt Libraries Used 📒 
 
 * UIKit <br>
 * CoreML
@@ -77,7 +77,7 @@ This app have a great impact on our society:
 
 # External Libraries Used 📦
 
-* [Loafjet](https://github.com/gokulnair2001/Loafjet)This library is made by one of our developer!
+* [Loafjet](https://github.com/gokulnair2001/Loafjet): This library is made by one of our developer!
 * [Alamofire](https://github.com/Alamofire/Alamofire)
 
 # Key Features 🔐

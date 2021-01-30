@@ -18,6 +18,7 @@ class FormViewController: UIViewController {
     @IBOutlet weak var issueField: UITextField!
     @IBOutlet weak var doctorNameField: UITextField!
     @IBOutlet weak var medicineField: UITextField!
+    @IBOutlet weak var bloodTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -42,14 +43,14 @@ class FormViewController: UIViewController {
         dateFormatter.dateFormat = "yyyy-MM-dd"
         let currentDate = dateFormatter.string(from: Date())
         
-        if (medicineField.text != "" && doctorNameField.text != "" && issueField.text != ""){
+        if (medicineField.text != "" && doctorNameField.text != "" && issueField.text != "" && bloodTextField.text != ""){
             
             if update == true {
                 APIFunctions.functions.updateReport(date: currentDate, doctorName: doctorNameField.text!, issue: issueField.text!, medicine: medicineField.text!, id: report!._id)
             }
             else{
                 
-                APIFunctions.functions.addReport(date: currentDate, doctorName: doctorNameField.text!, issue: issueField.text!, medicine: medicineField.text!)
+                APIFunctions.functions.addReport(date: currentDate, doctorName: doctorNameField.text!, issue: issueField.text!, medicine: medicineField.text!, blood: bloodTextField.text!)
             }
         }
         else{

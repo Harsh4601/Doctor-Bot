@@ -40,8 +40,8 @@ This app have a great impact on our society:
 * Do star this repo and/or contribute if you like it.🙂 
 
 # How To Use 🛑 
-* The app consists of four main sections:
-1. Diagnostic Section
+### The app consists of four main sections:
+1. Diagnostic Section 
 * The diagnostic section consists of various disease diagnosing units. Primarily we have % major units:  <br>
  a. COVID Detection <br>
  b. Teeth Disease  <br>
